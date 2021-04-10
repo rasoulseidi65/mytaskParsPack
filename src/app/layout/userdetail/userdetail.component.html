@@ -1,0 +1,30 @@
+
+
+
+<nz-table #smallTable nzSize="small"
+          nzShowPagination
+          nzShowSizeChanger>
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>title</th>
+    <th>description</th>
+    <th>images</th>
+    <th>online</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td style="width: 10%">{{ userDetailInfo['id']}}</td>
+    <td style="width: 10%">{{ userDetailInfo['title'] }}</td>
+    <td style="width: 50%">{{ userDetailInfo['description'] }}</td>
+    <td style="width: 50%">
+      <div *ngFor="let i of userDetailInfo['images']">
+        <img [src]="i"/>
+      </div>
+
+    </td>
+    <td>{{ userDetailInfo['online'] }}</td>
+  </tr>
+  </tbody>
+<!--</nz-table>-->

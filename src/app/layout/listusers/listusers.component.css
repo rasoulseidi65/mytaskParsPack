@@ -1,0 +1,11 @@
+img{
+  width: 40px;
+  height: 40px;
+}
+*{
+  cursor: pointer;
+}
+::ng-deep nz-spin {
+  /*display: inline-block!important;*/
+  margin-right: 80px!important;
+}
